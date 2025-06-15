@@ -16,46 +16,54 @@ In this project, we:
 
 ```
 dalabproject.ipynb     # Main notebook containing SKL and CKL implementations, visualizations, and experiments.
+requirements.txt       # Dependencies required to run the notebook.
 README.md              # Project overview, setup, and usage instructions.
+
 ```
 
 ## 🔧 Setup Instructions
 
-You will need Python 3.8+ with the following libraries:
-
+Install the required packages using:
 ```bash
-pip install numpy scipy scikit-learn matplotlib torch torchvision
+pip install -r requirements.txt
 ```
 
-Ensure GPU is available for faster kernel matrix inversion and large dataset processing.
+You will need Python 3.8+, and a GPU is recommended for kernel inversion and faster matrix computations.
 
 ## 🧪 How to Run
 
-Open the notebook:
+### ⚠️ IMPORTANT INSTRUCTIONS
 
-```bash
-jupyter notebook dalabproject.ipynb
-```
+Please follow these steps **before running the notebook**:
 
-Follow the cells sequentially. The notebook is organized into:
-1. **Data loading and preprocessing**
-2. **Kernel matrix computation**
-3. **Spectral or contrastive embedding**
-4. **KNN classification and accuracy measurement**
+1. Please load **Iris dataset** (`.csv`) and **MNIST dataset** (`.mat`) in your working directory.
+
+2. Open the notebook and set the correct path for the variable `path` where indicated.
+
+3. Un-comment the code block for the dataset you want to run (`Iris` or `MNIST`).
+
+4. **Run the notebook**:
+
+   ```bash
+   jupyter notebook dalabproject.ipynb
+
+5. Follow the cells sequentially.
 
 ## 📊 Results
 
-- **SKL + KNN** outperforms raw data KNN on MNIST.
-- Kernel-based methods show better class separation and generalization in low-dimensional embedding spaces.
-- Visualizations of contrastive loss and kernel similarities demonstrate the effectiveness of CKL.
+- Vanilla KNN (baseline)
+- PCA + KNN
+- Kernel PCA + KNN
+– Kernel Autoencoders + KNN
+– Spectral contrastive kernel learning)
+– Simple contrastive kernel learning)
 
 ## 📚 References
 
 - Esser, P., et al. (2023). *Nonparametric Representation Learning with Kernels*. arXiv:2305.13454.
-- scikit-learn, PyTorch official docs
 - Related work in contrastive learning and kernel methods
 
 ## 🧑‍🔬 Author
 
 Anushka Chaubey  
-For DaLab (Deep Artificial Intelligence Lab) Coursework, 2025
+For Data Analytics Lab Coursework @IITM, 2025
