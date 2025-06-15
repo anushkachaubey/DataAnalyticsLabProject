@@ -10,7 +10,7 @@ The project is motivated by recent works such as *"Nonparametric Representation 
 In this project, we:
 - Implement **Spectral Kernel Learning (SKL)** and **Contrastive Kernel Learning (CKL)**.
 - Use **RBF kernels** and **kernel inversion** techniques to project data into meaningful embeddings.
-- Evaluate performance using KNN classifiers on datasets like MNIST and CKPlus.
+- Evaluate performance using KNN classifiers on datasets like MNIST and IRIS.
 
 ## 📁 Project Structure
 
