@@ -1,5 +1,6 @@
 
 # 📘 DALab Project
+**Overleaf (Project Report)**: https://www.overleaf.com/read/fzvcknmwmprq#51f7a4
 
 This repository contains the implementation and experiments for a project inspired by non-parametric representation learning using kernels. The notebook primarily explores **Contrastive Kernel Learning** (CKL) for representation learning and evaluates its performance through kernel-based transformations and downstream KNN classification.
 
